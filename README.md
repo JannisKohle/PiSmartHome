@@ -10,7 +10,7 @@ turn on / off lights, turn them on xyz %, and change the colors.
 If you want to do automation, you can write bots that use the rest api to do more
 complicated things.
 
-There are client apps for iOS and desktop, written in Swift / Flutter and Electron.
+There will be client apps for iOS and desktop, written in Swift / Flutter and Electron.
 
 ## Automation / Bots:
 
