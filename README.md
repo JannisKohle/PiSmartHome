@@ -12,6 +12,22 @@ complicated things.
 
 There are client apps for iOS and desktop, written in Swift / Flutter and Electron.
 
+## Automation / Bots:
+
+If you want the lights to turn off automatically at some time, you can write a simple script
+yourself that uses the rest api (see down below). You should then put the script onto the Raspberry
+Pi, and run it. It wouldn't be smart to have the script on another machine, because then you would
+have to have the Pi **and** your computer running at the same time.
+
+If you don't want to run the script yourself, you can use the package.json inside the ```server/```.
+Example:
+
+I have a python script that should be automatically executed whenever the server on the RPi starts.
+The script is outside the ```server/``` directory and it's called ```automationScript.py```. I can
+add ``` && python3 ../automationScript.py``` to the end of the ```start``` script in
+```server/package.json```, and now ```automationScript.py``` will be automatically executed whenever
+I start the server using ```npm start```.
+
 ## The rest api:
 
 ### Add a new light:
